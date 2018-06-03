@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Sonede</display-name>
+	 <welcome-file-list>
+	  	<welcome-file>index.jsp</welcome-file>
+	 </welcome-file-list>
+  
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>connexion</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurConnexionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connexion</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>deconnexion</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurDeconnexionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deconnexion</servlet-name>
+		<url-pattern>/deconnexion</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>inscription</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurInscriptionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>inscription</servlet-name>
+		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>compte</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurCompteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>compte</servlet-name>
+		<url-pattern>/compte</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>modifier</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurModifInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>modifier</servlet-name>
+		<url-pattern>/modifier</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>facture</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurFactureServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>facture</servlet-name>
+		<url-pattern>/facture</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>hfacture</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurHFactureServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hfacture</servlet-name>
+		<url-pattern>/hfacture</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>consommation</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurConsommationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>consommation</servlet-name>
+		<url-pattern>/consommation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>reclamation</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurReclamationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reclamation</servlet-name>
+		<url-pattern>/reclamation</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>hreclamation</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurHReclamationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hreclamation</servlet-name>
+		<url-pattern>/hreclamation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>succes_paiement</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurSucces_paiementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>succes_paiement</servlet-name>
+		<url-pattern>/succes_paiement</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>page</servlet-name>
+		<servlet-class>com.sonede.mvc.controllers.ControleurPagesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>page</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+</web-app>

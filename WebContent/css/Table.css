@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #0088b2;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th {
+  padding: 20px;
+  font-size: 10px;
+  Font-Weight: Bold;
+}
+
+td {
+  padding: 20px;
+  padding-left: 0px;
+  font-size: 10px;
+}
